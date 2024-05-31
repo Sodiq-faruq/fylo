@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+header{
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    align-items: center;
+}
+header ul{
+    list-style: none;
+    display: flex;
+}
+header ul li{
+    margin-right: 30px;
+}
+header ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color:  hsl(238, 22%, 44%);
+}
+
+/* Show case Section*/
+
+.showcase{
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    align-items: center;
+    margin-bottom:200px;
+}
+.showcase .content{
+    width: 50%;
+    margin-top: 70px;
+}
+.showcase .content h1{
+    font-size: 40px;
+    color: hsl(238, 22%, 44%);
+    padding-bottom: 20px;
+}
+.showcase .content p, .productive .content p{
+    font-size: 19px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.showcase .content input{
+    width: 60%;
+    height: 50px;
+    padding-left: 10px;
+}
+.showcase .content button{
+    width: 35%;
+    height: 52px;
+    margin-left: 15px;
+    background: hsl(224, 93%, 58%);
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.showcase img{
+    width: 50%;
+}
+
+/* Productive */
+
+.productive{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Open Sans", sans-serif;
+}
+.productive .content{
+    width: 50%;
+}
+.productive .content h1{
+    font-size: 35px;
+    color: hsl(238, 22%, 44%);
+    padding-bottom: 20px;
+}
+.productive .content a{
+    font-size: 25px;
+    color: hsl(170, 45%, 43%);
+    text-decoration: none;
+    border-bottom:1px solid hsl(170, 45%, 43%) ;
+}
+.productive img{
+    width: 40%;
+    height: 100%;
+}
+.productive .testimonial{
+    width: 70%;
+    height: 350px;
+    background: hsl(240, 75%, 98%);
+    padding: 20px;
+    margin-bottom: 200px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+.productive .testimonial p{
+    font-size: 20px;
+
+}
+.productive .testimonial .profile {
+    display: flex;
+
+}
+.productive .testimonial .profile img{
+    width: 50px;
+    border-radius: 100%;
+}
+
+
+/*Newaletter*/
+.newsletter{
+    height: 350px;
+    background: hsl(238, 22%, 44%);
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding:100px 100px;
+    color: white;
+}
+.newsletter .content{
+  width: 40%;
+}
+.newsletter .content h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+form{
+    width: 45%;
+}
+form input{
+    display: block;
+    width:100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+}
+form button{
+    height: 50px;
+    width: 30%;
+    background:  hsl(224, 93%, 58%);
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Footer*/
+
+footer{
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    background: hsl(243, 87%, 12%);
+}
+footer h2{
+    display: inline-block;
+}
+footer .logo{
+    color: #fff;
+}
+footer .links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-left: 200px;
+}
+footer .links ul{
+    list-style: none;
+}
+footer .links ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+
+}
+
+@media(max-width:500px){
+  .container{
+    width: 90%;
+    margin: 0 auto;
+  }
+  header{
+    padding: 0;
+    height: 50px;
+  }
+  header .logo{
+    width: 100px;
+    padding-left: 10px;
+  }
+  header ul{
+    margin-right: 10px;
+  }
+  header ul li{
+    margin-right: 5px;
+}
+header ul li a{
+    font-size: 10px;
+}
+.showcase{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-top: 40px;
+}
+.showcase img{
+    width: 100%;
+}
+.showcase .content{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+.showcase .content h1{
+    font-size: 29px;
+    text-align: center;
+}
+.showcase .content p{
+    font-size: 18px;
+}
+.showcase .content input {
+    margin-bottom: 20px;
+    width: 100%;
+}
+.showcase .content button{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.productive {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+.productive img{
+    margin-bottom: 50px;
+}
+.productive .content{
+    width: 100%;
+}
+.productive img{
+    width: 100%;
+}
+.testimonial{
+    width: 100%;
+    margin: 0 auto;   
+}
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: center;
+}
+.newsletter .content{
+    width: 100%;
+    margin-top: 50px;
+}
+.newsletter .content h1{
+    margin: 0;
+}
+.newsletter form{
+    width: 100%;
+}
+form input{
+    margin-bottom: 20px;
+}
+form button{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.footer{
+    flex-direction: column;
+}
+.links{
+    flex-direction: column;
+}
+}
